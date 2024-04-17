@@ -1,0 +1,8 @@
+
+wkotlin:S1172"-Remove this unused function parameter "args".(¥å¥ûÿÿÿÿ8È­Ìßî1J$5e6329ce-7d7e-4ec1-a5c3-9b79273e80a4
+ekotlin:S6615" Remove this useless initializer.(Úà¹Ü8É­Ìßî1J$bab1fd89-9b0c-43ff-8afb-17dcf64a292e
+jkotlin:S6615" Remove this useless initializer.(Ü¤ˆÇüÿÿÿÿ8É­Ìßî1J$3b5994db-a814-4189-bfeb-54330b057793
+œkotlin:S117
+"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(™âôúÿÿÿÿ8Ë­Ìßî1J$1725b696-858f-4cf7-a74d-4b5502ff9d67
+œkotlin:S117"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(Ü¤ˆÇüÿÿÿÿ8Ë­Ìßî1J$9d785f53-a16d-4633-b945-b726fa64a687
+—kotlin:S117"SRename this local variable to match the regular expression ^`?[_a-z][a-zA-Z0-9]*`?$(Úà¹Ü8Ë­Ìßî1J$a37b6bd4-1e2e-4007-ae31-944a1088c8a0
