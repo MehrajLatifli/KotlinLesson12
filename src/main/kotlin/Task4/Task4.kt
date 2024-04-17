@@ -7,18 +7,30 @@ fun main(args: Array<String>) {
     val scanner = Scanner(System.`in`)
 
     print("\nEnter radius: ")
-    val radius: Double? = scanner?.nextDouble()
+    val radius: Double = getValidDouble(scanner)
 
-    var circle = Circle(radius)
+    val circle = Circle(radius)
     circle.radius=radius
     println(circle.calculateArea(1,scanner))
 
-    var triangle = Triangle(radius)
+    val triangle = Triangle(radius)
     triangle.radius=radius
     println(triangle.calculateArea(2,scanner))
 
-    var square = Square(radius)
+    val square = Square(radius)
     square.radius=radius
     println(square.calculateArea(3,scanner))
 
+}
+
+fun getValidDouble(scanner: Scanner): Double {
+    while (true) {
+        if (scanner.hasNextDouble()) {
+            return scanner.nextDouble()
+        } else {
+            println("Please enter a valid number.")
+            print("Enter: ")
+            scanner.next()
+        }
+    }
 }

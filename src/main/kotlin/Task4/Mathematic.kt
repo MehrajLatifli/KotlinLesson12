@@ -14,13 +14,13 @@ open class Mathematic(override var inlineRadius: Double?) : IParameter {
             }
             2 -> {
                 print("\nEnter side_1: ")
-                val side1: Double? = scanner?.nextDouble()
+                val side1: Double? = getValidDouble(scanner!!)
 
                 print("Enter side_2: ")
-                val side2: Double? = scanner?.nextDouble()
+                val side2: Double? =  getValidDouble(scanner!!)
 
                 print("Enter side_3: ")
-                val side3: Double? = scanner?.nextDouble()
+                val side3: Double? =  getValidDouble(scanner!!)
 
                 val triangleArea = inlineRadius?.let { r ->
 
@@ -41,7 +41,7 @@ open class Mathematic(override var inlineRadius: Double?) : IParameter {
             }
             3 -> {
                 print("\nEnter squareSide: ")
-                val squareSide: Double? = scanner?.nextDouble()
+                val squareSide: Double? = getValidDouble(scanner!!)
 
                 val result = inlineRadius?.let { r ->
                     squareSide?.let { side ->
@@ -53,6 +53,18 @@ open class Mathematic(override var inlineRadius: Double?) : IParameter {
                 result
             }
             else -> "Invalid choice."
+        }
+    }
+
+    fun getValidDouble(scanner: Scanner): Double {
+        while (true) {
+            if (scanner.hasNextDouble()) {
+                return scanner.nextDouble()
+            } else {
+                println("Please enter a valid number.")
+                print("Enter: ")
+                scanner.next()
+            }
         }
     }
 }
