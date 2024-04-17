@@ -56,7 +56,7 @@ open class Mathematic(override var inlineRadius: Double?) : IParameter {
         }
     }
 
-    fun getValidDouble(scanner: Scanner): Double {
+    private fun getValidDouble(scanner: Scanner): Double? {
         while (true) {
             if (scanner.hasNextDouble()) {
                 return scanner.nextDouble()

@@ -7,7 +7,7 @@ fun main(args: Array<String>) {
     val scanner = Scanner(System.`in`)
 
     print("\nEnter radius: ")
-    val radius: Double = getValidDouble(scanner)
+    val radius: Double? = getValidDouble(scanner)
 
     val circle = Circle(radius)
     circle.radius=radius
@@ -20,10 +20,9 @@ fun main(args: Array<String>) {
     val square = Square(radius)
     square.radius=radius
     println(square.calculateArea(3,scanner))
-
 }
 
-fun getValidDouble(scanner: Scanner): Double {
+fun getValidDouble(scanner: Scanner): Double? {
     while (true) {
         if (scanner.hasNextDouble()) {
             return scanner.nextDouble()
